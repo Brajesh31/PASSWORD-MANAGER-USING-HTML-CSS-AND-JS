@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(130deg, #92fe9d 0%, #00c9ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    background: #ffffffaa;
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 25px;
+    width: 350px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: transform 0.2s ease;
+  }
+  
+  input:focus {
+    transform: scale(1.03);
+    border-color: #00c9ff;
+  }
+  
+  .submit-btn,
+  .generate-btn {
+    background: #00c9ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover,
+  .generate-btn:hover {
+    background: #0fb8ad;
+    transform: translateY(-2px);
+  }
+  
+  #searchInput {
+    margin-bottom: 20px;
+  }
+  
+  #strengthIndicator {
+    height: 5px;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  #strengthIndicator[data-strength="1"] {
+    background: #ff4b5c;
+  }
+  #strengthIndicator[data-strength="2"] {
+    background: #f3c623;
+  }
+  #strengthIndicator[data-strength="3"] {
+    background: #f7d674;
+  }
+  #strengthIndicator[data-strength="4"] {
+    background: #3ac569;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px;
+    justify-content: space-between;
+  }
+  
+  li span:nth-child(1) {
+    flex: 1;
+  }
+  
+  li button {
+    background: #ff6b6b;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  li button:hover {
+    background: #ed4b4b;
+  }
+  
+  .copy-btn {
+    background: #ffd93d !important;
+    color: #333 !important;
+  }
+  
+  .toggle-btn {
+    background: #4ecdc4 !important;
+    color: #fff !important;
+  }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <form id="passwordForm">
+        <input type="text" id="accountName" placeholder="Account Name" />
+        <input type="password" id="accountPassword" placeholder="Password" />
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        />
+        <div id="strengthIndicator"></div>
+        <button type="submit" class="submit-btn">Add</button>
+      </form>
+
+      <button id="generatePasswordBtn" class="generate-btn">
+        Generate Random Password
+      </button>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by account name"
+      />
+      <ul id="passwordList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
